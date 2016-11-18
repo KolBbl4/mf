@@ -1,3 +1,7 @@
 <?php
+define('BASE_DIR',  getcwd());
+require './frm/core/bootstrap.php';
+$app = new HowdyEngine(require('settings.php'));
+$settings = require('settings.php');
 
-echo $_SERVER['REQUEST_URI'];
+print_r($app->app);
